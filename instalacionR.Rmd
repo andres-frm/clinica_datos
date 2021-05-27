@@ -11,7 +11,7 @@ output:
 
 R es un lenguaje computacional que permite automatizar cálculos complejos a través de algoritmos, y usar herramientas programadas por otros. Es un software altamente flexible, en constante expansión, y aunque fue desarrollado principalmente para el análisis de datos su uso se ha extendido a los SIG, desarrollo de sitios web y aplicaciones.
 
-R se deriva de S, un lenguaje desarrollado por John Chambers et al. en 1976 en Laboratorios Bell. Durante la década de los 90, Ross Ihaka y Robert Gentleman de la Universidad de Auckland experimentaron con S, surgiendo como resultado R. Justamente R recibe su nombre probablemente por las iniciales de sus desarrolladores o simplemente por ser una letra contigua a la S. Cierto o especulación, no deja de ser una historia interesante para contar —en esos términos lo plantean Zurr et al. 2009—
+R se deriva de S, un lenguaje desarrollado por John Chambers et al. en 1976 en Laboratorios Bell. Durante la década de los 90 Ross Ihaka y Robert Gentleman, de la Universidad de Auckland, experimentaron con S, surgiendo como resultado R. Justamente R recibe su nombre probablemente por las iniciales de sus desarrolladores o simplemente por ser una letra contigua a la S. Cierto o especulación, no deja de ser una historia interesante para contar —en esos términos lo plantean Zurr et al. 2009—
 
 ### ¿Por qué usar R?
 
@@ -30,11 +30,11 @@ En este curso usaremos R a través de RStudio IDE (Integrated Developed Environm
 
 _____________________________________________________________________________
 
-Nota: si el sistema operativo de su computadora es Windows debe instalar el complemento Rtools, este garantiza el correcto funcionamiento de los paquetes desarrollados en versiones de R superiores a la 4.0.0. en el CRAN mirror de la UNLP siga la ruta **Download R for Windows** >> **Rtools** y descargue el instalador **rtools40v2-x86_64.exe**. 
+Nota: si el sistema operativo de su computadora es Windows debe instalar el complemento Rtools, este garantiza el correcto funcionamiento de los paquetes desarrollados en versiones de R superiores a la 4.0.0. En el CRAN mirror de la UNLP siga la ruta **Download R for Windows** >> **Rtools** y descargue el instalador **rtools40v2-x86_64.exe**. 
 
 Una vez instalado debe ejecutar el siguiente código en la consola de R:
 
-1. Abra RStudio, copie el siguiente código en la consola de R y oprima enter
+1. Abra RStudio, copie el siguiente código en la consola de R y oprima Enter
 
 ```{r echo = T, eval=FALSE}
 
@@ -44,7 +44,7 @@ writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
 
 ![](imagenes/rtoolsfig1.png)
 
-2. Copie el siguiente código en la consola y presione enter nuevamente. 
+2. Copie el siguiente código en la consola y presione Enter nuevamente. 
 
 ```{r echo = T, eval=F}
 
@@ -66,7 +66,7 @@ install.packages("jsonlite", type = "source")
 
 ![](imagenes/rtoolsfig3.png)
 
-Si el paquete fue instalado correctamente, entonces su R y RStudio estan listos. Puede comprobarlo ejecutando las siguientes líneas de comando. 
+Si el paquete fue instalado correctamente, entonces su R y RStudio están listos. Puede comprobarlo ejecutando las siguientes líneas de comando. 
 
 ```{r echo = T, eval=F}
 
