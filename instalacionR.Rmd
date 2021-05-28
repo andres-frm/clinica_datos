@@ -11,7 +11,7 @@ output:
 
 R es un lenguaje computacional que permite automatizar cálculos complejos a través de algoritmos, y usar herramientas programadas por otros. Es un software altamente flexible, en constante expansión, y aunque fue desarrollado principalmente para el análisis de datos su uso se ha extendido a los SIG, desarrollo de sitios web y aplicaciones.
 
-R se deriva de S, un lenguaje desarrollado por John Chambers et al. en 1976 en Laboratorios Bell. Durante la década de los 90 Ross Ihaka y Robert Gentleman, de la Universidad de Auckland, experimentaron con S, surgiendo como resultado R. Justamente R recibe su nombre probablemente por las iniciales de sus desarrolladores o simplemente por ser una letra contigua a la S. Cierto o especulación, no deja de ser una historia interesante para contar —en esos términos lo plantean Zurr et al. 2009—
+R se deriva de S, un lenguaje desarrollado por John Chambers et al. en 1976 en Laboratorios Bell. Durante la década de los 90 Ross Ihaka y Robert Gentleman, de la Universidad de Auckland, experimentaron con S, surgiendo como resultado R. Justamente R recibe su nombre probablemente por las iniciales de sus desarrolladores o simplemente por ser una letra contigua a la S. Cierto o especulación, no deja de ser una historia interesante para contar —en esos términos lo plantean Zuur et al. 2009—
 
 ### ¿Por qué usar R?
 
@@ -27,6 +27,10 @@ En este curso usaremos R a través de RStudio IDE (Integrated Developed Environm
 * Mac **RStudio-1.4.1106.dmg**
 
 *Si su sistema operativo es inferior a Windows 10 o macOS 10.13, descargue la versión adecuada* [*aquí*](https://www.rstudio.com/products/rstudio/older-versions/)
+
+*Para el sistema operativo **Linux y sus distribuciones**, ver especificaciones en:  
+- https://cloud.r-project.org/bin/linux/ubuntu/fullREADME.html#installing-r  
+- https://www.rstudio.com/products/rstudio/download/#download  
 
 _____________________________________________________________________________
 
