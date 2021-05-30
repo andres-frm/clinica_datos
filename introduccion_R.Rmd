@@ -1,0 +1,119 @@
+---
+title: "Primeros pasos en R"
+author: "Andrés F."
+date: "5/29/2021"
+transition: default
+output:
+  ioslides_presentation: default
+  incremental: TRUE
+  slidy_presentation: default
+  
+---
+
+## RStudio
+
+<div align="center">
+<img src="imagenes/ventanas_rstudio.png" width=800 height=500>
+</div>
+
+## R
+
+Una calculadora con esteroides!
+
+```{r echo = TRUE}
+
+(log(548) * log10(5)) - (exp(35 / 5) + pi^2 + sqrt(64))
+
+- 8 * 8
+
+2 + -2
+
+```
+
+## Creando objetos 
+
+R es un lenguaje de programación orientado a objetos. Es decir, creamos objetos al asignar datos o funciones a nombres particulares. 
+
+<div class = "red2">
+nombre `<-` datos o funciones
+</div>
+
+Símbolos de asignación: 
+`<-` o `=`.
+
+```{r echo = TRUE}
+
+curso <- "clinica de datos"
+curso # ejecutamos "curso" para verificar el elemento asignado 
+
+# Cualquier escrito que antecede un `#` es entendido por R
+# como un comentario que no afecta el código.
+
+
+
+```
+
+## `=` o `<-` funcionan igual como símbolos de asignación, peeero...
+
+```{r echo = TRUE}
+curso <- "clinica de datos"
+```
+
+```{r echo = TRUE}
+curso = "clinica de datos"
+```
+
+Son lo mismo. Sin embargo, `=` también se emplea  para asignar valores a los argumentos en las funciones, mientras `<-` solo se usa como símbolo de asignación 
+
+e.g.
+
+```{r echo = TRUE, eval=FALSE}
+
+mean(c(1, 2, 3, NA), na.rm = TRUE) # el "na.rm = TRUE" determina la forma
+                                   # en la que se comporta la función
+```
+
+Paciencia, pronto tendrá más sentido.
+
+## entonces :)
+
+<div align = "center">
+<img src = "imagenes/simbolo_asignacion.jpg">
+</iuv>
+
+## Instalar y cargar paquetes
+
+Función para instalar paquetes
+```{r echo = TRUE, eval = FALSE}
+
+install.packages("paquete")
+
+```
+
+Cargar paquetes
+```{r echo = TRUE, eval = FALSE}
+
+library(paquete)
+
+```
+
+o
+
+```{r echo = TRUE, eval = FALSE}
+
+require(paquete)
+
+```
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
