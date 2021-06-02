@@ -85,8 +85,7 @@ e.g.
 
 ```{r echo = TRUE, eval=FALSE}
 
-mean(c(1, 2, 3, NA), na.rm = TRUE) # el "na.rm = TRUE" determina la forma
-                                   # en la que se comporta la función
+mean(c(1, 2, 3, NA), na.rm = TRUE) 
 ```
 
 Paciencia, pronto tendrá más sentido.
@@ -213,7 +212,7 @@ df <- data.frame(edad = sample(x = 1:100, size = 5),
                  sexo = as.factor(c("f", "m", "f", "f", "m")))
 df
 
-# Explore las funcionesnames(), colnames(), 
+# Explore las funciones names(), colnames(), 
 # nrow(), ncol(), dim(), length() y object.size()
 ```
 
@@ -242,7 +241,7 @@ df[, 1] # Usando notación de matriz
 df$edad # Especificando el nombre de la variable con el símbolo "$"
 
 ```
-Su uso dependerá de la función y el propósito código que estén desarrollando.
+Su uso dependerá de la función y el propósito del código que estén desarrollando.
 
 ## Extrayendo subconjuntos en un DF
 
@@ -262,7 +261,7 @@ PD — !DF y matrices se indexan igual!
 
 sum(x = df$edad) # calcula la suma de todas las edades
 
-mean(x = df[1], na.rm = TRUE) # calcula el promedio
+mean(x = df[[1]], na.rm = TRUE) # calcula el promedio
 
 ```
 
@@ -290,10 +289,9 @@ La indexación de listas es solo un poco más compleja, Hadley Wickham lo resume
 </div>
 
 ## Primeros Gráficos. La función `plot()`
-
+ 
 ```{r echo = TRUE}
-plot(iris$Species, iris$Sepal.Length, 
-     ylab = "Longitud sépalo", xlab = "Especie")
+plot(iris$Species, iris$Sepal.Length, ylab = "Longitud sépalo", xlab = "Especie")
 
 ```
 
@@ -310,7 +308,8 @@ plot(iris$Petal.Width, iris$Sepal.Length,
 ```{r echo = TRUE}
 plot(iris$Petal.Width, iris$Sepal.Length, 
      col = ifelse(iris$Species == "setosa", "green",
-                    ifelse(iris$Species == "virginica", "black", "blue")), pch = 19)
+                    ifelse(iris$Species == "virginica", 
+                           "black", "blue")), pch = 19)
 ```
 
 ##
