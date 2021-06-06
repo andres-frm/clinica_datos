@@ -371,11 +371,11 @@ x[1, 2] #la fila y columna (x[fila, columna])</pre>
 df</pre>
 
 <pre >##   edad  nombre sexo
-## 1   64 natalia    f
-## 2   44  julian    m
-## 3    1   jenny    f
-## 4   81   erika    f
-## 5   72   paulo    m</pre>
+## 1   17 natalia    f
+## 2   81  julian    m
+## 3   60   jenny    f
+## 4   26   erika    f
+## 5   45   paulo    m</pre>
 
 <pre class = 'prettyprint lang-r'># Explore las funciones names(), colnames(), 
 # nrow(), ncol(), dim(), length() y object.size()</pre>
@@ -385,17 +385,17 @@ df</pre>
 <pre class = 'prettyprint lang-r'>summary(df)</pre>
 
 <pre >##       edad         nombre          sexo 
-##  Min.   : 1.0   Length:5           f:3  
-##  1st Qu.:44.0   Class :character   m:2  
-##  Median :64.0   Mode  :character        
-##  Mean   :52.4                           
-##  3rd Qu.:72.0                           
+##  Min.   :17.0   Length:5           f:3  
+##  1st Qu.:26.0   Class :character   m:2  
+##  Median :45.0   Mode  :character        
+##  Mean   :45.8                           
+##  3rd Qu.:60.0                           
 ##  Max.   :81.0</pre>
 
 <pre class = 'prettyprint lang-r'>str(df)</pre>
 
 <pre >## &#39;data.frame&#39;:    5 obs. of  3 variables:
-##  $ edad  : int  64 44 1 81 72
+##  $ edad  : int  17 81 60 26 45
 ##  $ nombre: chr  &quot;natalia&quot; &quot;julian&quot; &quot;jenny&quot; &quot;erika&quot; ...
 ##  $ sexo  : Factor w/ 2 levels &quot;f&quot;,&quot;m&quot;: 1 2 1 1 2</pre>
 
@@ -406,25 +406,25 @@ df</pre>
 <pre class = 'prettyprint lang-r'>df[1]   # Extrae la columna conservando la clase</pre>
 
 <pre >##   edad
-## 1   64
-## 2   44
-## 3    1
-## 4   81
-## 5   72</pre>
+## 1   17
+## 2   81
+## 3   60
+## 4   26
+## 5   45</pre>
 
 <pre class = 'prettyprint lang-r'>df[[1]] # Extrae la información en forma de vector</pre>
 
-<pre >## [1] 64 44  1 81 72</pre>
+<pre >## [1] 17 81 60 26 45</pre>
 
 </article></slide><slide class=""><hgroup><h2>…</h2></hgroup><article  id="section">
 
 <pre class = 'prettyprint lang-r'>df[, 1] # Usando notación de matriz</pre>
 
-<pre >## [1] 64 44  1 81 72</pre>
+<pre >## [1] 17 81 60 26 45</pre>
 
 <pre class = 'prettyprint lang-r'>df$edad # Especificando el nombre de la variable con el símbolo &quot;$&quot;</pre>
 
-<pre >## [1] 64 44  1 81 72</pre>
+<pre >## [1] 17 81 60 26 45</pre>
 
 <p>Su uso dependerá de la función y el propósito del código que estén desarrollando.</p>
 
@@ -435,16 +435,16 @@ df</pre>
 <pre class = 'prettyprint lang-r'>df[df$edad &gt;= 20 &amp;
      df$sexo == &quot;f&quot;, ] # Usando notación de matrices y operadores lógicos</pre>
 
-<pre >##   edad  nombre sexo
-## 1   64 natalia    f
-## 4   81   erika    f</pre>
+<pre >##   edad nombre sexo
+## 3   60  jenny    f
+## 4   26  erika    f</pre>
 
 <pre class = 'prettyprint lang-r'>subset(x = df, df$edad &gt;= 20 &amp; 
          df$sexo == &quot;f&quot;) # o empleando la función subset()</pre>
 
-<pre >##   edad  nombre sexo
-## 1   64 natalia    f
-## 4   81   erika    f</pre>
+<pre >##   edad nombre sexo
+## 3   60  jenny    f
+## 4   26  erika    f</pre>
 
 <p>PD — !DF y matrices se indexan igual!</p>
 
@@ -452,11 +452,11 @@ df</pre>
 
 <pre class = 'prettyprint lang-r'>sum(x = df$edad) # calcula la suma de todas las edades</pre>
 
-<pre >## [1] 262</pre>
+<pre >## [1] 229</pre>
 
 <pre class = 'prettyprint lang-r'>mean(x = df[[1]], na.rm = TRUE) # calcula el promedio</pre>
 
-<pre >## [1] 52.4</pre>
+<pre >## [1] 45.8</pre>
 
 <p>Los argumentos en las funciones —como <code>x=</code> y <code>na.rm=</code> en la función <code>mean()</code>— definen su comportamiento. Pueden controlar objetos, operaciones lógicas y no tienen que ser explicitados en la función.</p>
 
@@ -470,15 +470,15 @@ df</pre>
 lista</pre>
 
 <pre >## [[1]]
-## [1]  0.0830223 -3.3369816 -0.8083316  2.0093380  1.5000326
+## [1]  0.01878705 -0.16500383  0.18258783 -0.98237066 -2.09279813
 ## 
 ## [[2]]
 ##   edad  nombre sexo
-## 1   64 natalia    f
-## 2   44  julian    m
-## 3    1   jenny    f
-## 4   81   erika    f
-## 5   72   paulo    m</pre>
+## 1   17 natalia    f
+## 2   81  julian    m
+## 3   60   jenny    f
+## 4   26   erika    f
+## 5   45   paulo    m</pre>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-1">
 
