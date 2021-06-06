@@ -113,7 +113,7 @@ Formato largo
 Formato ancho
 
 ##
-Usaremos un set de datos de tres especies de pingüinos del Artico. 
+Usaremos una base de datos morfológicos y fisiológicos de tres especies de pingüinos del Artico. 
 
 <div align = "center">
 <img src = "imagenes/penguins.jpg" width=800 height=490>
@@ -278,4 +278,7 @@ Los niveles de las variables categóricas están distribuidos a lo largo de las 
 stack(peng_unst, select = c(Adelie, Chinstrap, Gentoo))
 
 ```
+
+## Manejo de variables en un DF y operaciones agrupadas
+
 
