@@ -52,7 +52,7 @@ Opción para gestionar múltiples directorios de trabajo usando la interfaz grá
 
 ## Ingresar datos a partir de archivos
 
-Pueden importan información desde archivos `.xlsx`, `.csv` y `.txt`. Pero si lo que requieren es cargár información de paquetes estadísticos como SPSS, Stata, SAS, Systat, entre otros, querrán explorar el paquete `foreing`. Acá trataremos los tres primeros.
+Pueden importan información desde archivos `.xlsx`, `.csv` y `.txt`. Pero si lo que requieren es cargar información de paquetes estadísticos como SPSS, Stata, SAS, Systat, entre otros, querrán explorar el paquete `foreing`. Acá trataremos los tres primeros.
 
 **Archivos de Excel .xlsx**
 
@@ -113,7 +113,7 @@ Formato largo
 Formato ancho
 
 ##
-Usaremos una base de datos morfológicos y fisiológicos de tres especies de pingüinos del Artico. 
+Usaremos una base de datos morfológicos y fisiológicos de tres especies de pingüinos del Ártico. 
 
 <div align = "center">
 <img src = "imagenes/penguins.jpg" width=800 height=490>
@@ -174,7 +174,7 @@ summary(penguins_raw$Region)
 
 ```
 
-A diferencia de los factores las cadenas de caracter no tienen niveles o agrupamientos. Mas bien, consisten en secuencias heterogeneas de símbolos cuya manipulación comprende un tema completo en programación computacional, y no serán tratada en este curso.
+A diferencia de los factores las cadenas de caracter no tienen niveles o agrupamientos. Más bien, consisten en secuencias heterogáneas de símbolos cuya manipulación comprende un tema completo en programación computacional, y no serán tratada en este curso.
 
 ## NA's
 
@@ -208,7 +208,7 @@ mean(penguins$bill_length_mm, na.rm = T)
 
 **`NaN`** (not a number). Es retornado cuando el computo produce un valor que no es numérico.
 
-**`NULL`**. Es retornado cuando un computo produce un valor indeterminado o inexistente.
+**`NULL`**. Es retornado cuando un cmputo produce un valor indeterminado o inexistente.
 
 **`Inf` - `-Inf`**. Valores muy grandes o el cociente de una división por cero
 
@@ -281,4 +281,4 @@ stack(peng_unst, select = c(Adelie, Chinstrap, Gentoo))
 
 ## Manejo de variables en un DF y operaciones agrupadas
 
-
+paquete `dplyr` y funciones base.
