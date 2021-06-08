@@ -1,0 +1,9 @@
+a	b	c
+651	f	s
+652	f	s
+8	f	s
+16,9	d	s
+51	d	s
+8,74	d	s
+2	c	s
+65	c	s
